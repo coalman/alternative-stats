@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+// NOTE(coalman): customize any bulma variables here before bulma.sass import
+$body-background-color: #f5f7fa;
+
+@import "~bulma/bulma.sass";
+@import "~buefy/src/scss/buefy";
+
+.section {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  margin-top: 40px;
+  padding: 40px 20px;
+}
