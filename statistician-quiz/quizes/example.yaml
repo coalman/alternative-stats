@@ -2,34 +2,87 @@ name: Example Quiz
 description: An example quiz.
 publishdate: 2017-09-01
 questions:
-  - question: Example question text 0
+  - question: Founded the department of Experimental Statistics at North Carolina State University
     choices:
-      - image: right.svg
-        alt: "text a screen reader would use"
-        response: "That's the right answer!"
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Correct! Cox was also director of the Research Triangle Institute."
         correct: true
-      - image: wrong.svg
-        alt: "for vision impaired users"
-        response: "That's the wrong answer!"
-        correct: false
-  - question: Example question text 1
-    choices:
-      - image: wrong.svg
-        alt: "for vision impaired users"
-        response: "That's the wrong answer!"
-        correct: false
-      - image: right.svg
-        alt: "text a screen reader would use"
-        response: "That's the right answer!"
-        correct: true
-  - question: Example question text 2
-    choices:
-      - image: right.svg
-        alt: "text a screen reader would use"
-        response: "That's the right answer!"
-        correct: true
-      - image: wrong.svg
-        alt: "for vision impaired users"
-        response: "That's the wrong answer!"
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Wrong! The great white shark founded Scientology."
         correct: false
 
+  - question: Performed seminal work on experimental design
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Correct! Cox's book, Experimental Designs, is a seminal work in this area that is still being used today."
+        correct: true
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Wrong! The great white shark's work on experimental design was largely incremental."
+        correct: false
+
+  - question: First female president of the American Statistical Association
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Correct! Cox was also an elected member of the International Statistics Institute (ISI) and the National Academy of Sciences."
+        correct: true
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Wrong! The great white shark was never risen above the rank of treasurer in the American Statistical Association."
+        correct: false
+
+  - question: Upon graduating high school, had aspirations to become a deaconess
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Correct! However, Cox decided against a life in the church in favor of additional education."
+        correct: true
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Wrong! The great white shark turned away from god after a brief (and wildly unsuccesful) attempt at becoming a snake handler."
+        correct: false
+
+  - question: Received a Bachelor of Science (BS) in mathematics and a Master of Science (MS) in statistics from Iowa State University
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Correct! Cox also took graduate courses in statistics at University of California, Berkeley."
+        correct: true
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Wrong! The great white shark has a degree in media studies from Vassar College."
+        correct: false
+  - question: A large mackerel also known as `white death'
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Wrong! While Cox was known to her graduate students as 'White Death,' anthropologists maintain that her fossil remains are inconsistent with those of most mackerel."
+        correct: false
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Correct! Other aliases include 'White Pointer,' 'White Shark,' and 'Chomp-Chomp-Death.'"
+        correct: true
+  - question: Came into existence during the Miocene Epoch
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Wrong! Carbon dating of her slide-rule suggests Cox was born significantly later than the Miocene Epoch."
+        correct: false
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Correct! Evolutionary biologists long-believed that the great white shark was closely related to Megalodon (the huge prehistoric shark that the Discovery Channel can't seem to shut up about during Shark Week); however, the current theory is that the great white beast evolved from the nightmares of children."
+        correct: true
+  - question: Can have a bite force of nearly 20,000 newtons
+    choices:
+      - image: gertrude-cox.svg
+        alt: "Gertrude Cox"
+        response: "Wrong! Cox's maximal bite force barely reached 1,000 netwons."
+        correct: false
+      - image: great-white-shark.svg
+        alt: "Great white shark"
+        response: "Correct! This is one reason the great whites are rarely chosen as retrievers by waterfowl hunters."
+        correct: true
