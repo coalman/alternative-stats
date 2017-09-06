@@ -1,4 +1,4 @@
-import quiz, {quizLookup, getQuizId} from '../quizes';
+import quiz, {quizLookup, getQuizId} from '../quizzes';
 
 function state() {
   return {

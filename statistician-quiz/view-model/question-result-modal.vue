@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import {quizLookup} from '../quizes';
 import {mapState, mapGetters} from 'vuex';
 
 export default {

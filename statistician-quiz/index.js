@@ -12,7 +12,7 @@ import QuestionViewModel from './view-model/question.vue';
 import QuizResultViewModel from './view-model/quiz-result.vue';
 
 import createStoreOpts from './store';
-import quizes, {getQuizId} from './quizes';
+import quizes, {getQuizId} from './quizzes';
 
 Vue.use(Buefy);
 Vue.use(VueRouter);

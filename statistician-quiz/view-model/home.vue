@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import quizes, {getQuizId} from '../quizes';
+import quizes, {getQuizId} from '../quizzes';
 
 export default {
   data() {
