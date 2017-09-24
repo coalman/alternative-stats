@@ -4,6 +4,9 @@
   "description": "A single-page, static web app for Laber's weekly statistician quiz.",
   "main": "index.js",
   "author": "coalman <tehcoalman@gmail.com>",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

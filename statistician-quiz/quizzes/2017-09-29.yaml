@@ -1,6 +1,6 @@
-name: Example Quiz
-description: An example quiz.
-publishdate: 2017-09-01
+name: First Quiz
+description: The first quiz o.o
+publishdate: 2017-09-29
 questions:
   - question: Founded the department of Experimental Statistics at North Carolina State University
     choices:

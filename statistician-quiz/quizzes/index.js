@@ -1,10 +1,7 @@
 import slugify from 'slugify';
 
-import ExampleQuiz from './example.yaml';
-
-const quizList = [
-  ExampleQuiz
-];
+const quizRequire = require.context('./', false, /\.yaml$/);
+const quizList = quizRequire.keys().map((quizFile) => quizRequire(quizFile));
 
 export function getQuizId(quiz) {
   return slugify(quiz.name, {lower: true});
