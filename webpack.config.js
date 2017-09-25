@@ -12,7 +12,7 @@ module.exports = {
   },
 
   entry: {
-    'statistician-quiz': './statistician-quiz/index.js'
+    'alternative-stats': './alternative-stats/index.js'
   },
 
   output: {

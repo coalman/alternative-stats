@@ -1,5 +1,5 @@
 {
-  "name": "statistician-quiz",
+  "name": "alternative-stats",
   "version": "0.0.0",
   "description": "A single-page, static web app for Laber's weekly statistician quiz.",
   "main": "index.js",
