@@ -5,12 +5,12 @@ var webpackCfg = require('./webpack.config');
 module.exports = function (config) {
   config.set({
     files: [{
-      pattern: 'test/unit.js',
+      pattern: 'test/index.js',
       watched: false
     }],
 
     preprocessors: {
-      'test/unit.js': ['webpack', 'sourcemap']
+      'test/index.js': ['webpack', 'sourcemap']
     },
 
     webpack: {

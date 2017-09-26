@@ -1,9 +1,11 @@
-import quiz from './quiz';
+import currentQuiz from './current-quiz';
+import quizzes from './quizzes';
 
 export default function createStoreOpts() {
   return {
     modules: {
-      quiz
+      currentQuiz,
+      quizzes
     }
   };
 };

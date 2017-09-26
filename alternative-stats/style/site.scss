@@ -12,3 +12,13 @@ $body-background-color: #f5f7fa;
   margin-top: 40px;
   padding: 40px 20px;
 }
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-img {
+  width: 400px;
+}
