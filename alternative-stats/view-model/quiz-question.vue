@@ -6,6 +6,8 @@
     .question-choice(v-for="(choice, index) in questionChoices")
       img.question-choice-img(:src="choice.image" :alt="choice.alt" @click="onChoiceClick(index)")
 
+  p.subtitle {{ progressText }}
+
   b-modal(:active="showResponse" @close="nextQuestion")
     .card
       .card-content
@@ -28,15 +30,26 @@ export default {
 
   computed: {
     ...mapGetters({
+      quiz: 'currentQuiz',
       question: 'currentQuestion',
       answer: 'currentAnswer',
       score: 'currentScore',
       lastQuestion: 'lastQuestion'
     }),
 
+    progressText() {
+      const qId = Number(this.questionId) + 1;
+      const total = this.quiz.questions.length;
+
+      return `Progress: ${qId} / ${total}`;
+    },
+
     questionText() {
       if (this.question) {
-        return this.question.question;
+        const qText = this.question.question;
+        const qId = Number(this.questionId) + 1;
+
+        return `${qId}) ${qText}`;
       }
 
       return null;

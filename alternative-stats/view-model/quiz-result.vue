@@ -34,7 +34,8 @@
       span.icon.is-medium
         i.fa.fa-twitter-square.fa-2x
 
-  button.button(@click="done") More Quizzes
+  button.button(@click="again") Take it again
+  button.button(@click="done") See more quizzes
 </template>
 
 <script>
@@ -72,6 +73,23 @@ export default {
   },
 
   methods: {
+    again() {
+      const quizId = this.$route.params.quizId;
+
+      this.$store.dispatch({
+        type: 'startQuiz',
+        quizId
+      });
+
+      this.$router.replace({
+        name: 'quizQuestion',
+        params: {
+          quizId,
+          questionId: 0
+        }
+      });
+    },
+
     done() {
       this.$router.push('/');
     }
