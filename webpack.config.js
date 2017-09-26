@@ -1,5 +1,7 @@
 var path = require('path');
 
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   context: __dirname,
   cache: true,
@@ -75,5 +77,11 @@ module.exports = {
         }
       }]
     }] // end of module.rules
-  } // end of module
+  }, // end of module
+
+  plugins: [
+    new CopyWebpackPlugin([
+      { context: 'static', from: '**/*', to: '.' }
+    ])
+  ]
 };

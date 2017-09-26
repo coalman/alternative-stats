@@ -84,24 +84,26 @@ export default {
     nextQuestion() {
       this.showResponse = false;
 
-      if (this.lastQuestion) {
-        this.$router.replace({
-          name: 'quizResult',
-          params: {
-            quizId: this.$route.params.quizId
-          }
-        });
-      } else {
-        this.$router.replace({
-          name: 'quizQuestion',
-          params: {
-            quizId: this.$route.params.quizId,
-            questionId: this.questionId + 1
-          }
-        });
+      this.$nextTick(() => {
+        if (this.lastQuestion) {
+          this.$router.replace({
+            name: 'quizResult',
+            params: {
+              quizId: this.$route.params.quizId
+            }
+          });
+        } else {
+          this.$router.replace({
+            name: 'quizQuestion',
+            params: {
+              quizId: this.$route.params.quizId,
+              questionId: this.questionId + 1
+            }
+          });
 
-        this.$store.dispatch('nextQuestion');
-      }
+          this.$store.dispatch('nextQuestion');
+        }
+      });
     }
   }
 };

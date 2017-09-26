@@ -1,4 +1,5 @@
 *.log
+dist/
 
 # Mac
 .DS_Store/
