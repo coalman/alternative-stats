@@ -143,9 +143,8 @@ export default {
 }
 
 .result-btn {
-    width: 35%;
-    min-width: 200px;
-    max-width: 400px;
+    width: auto;
+    min-width: 35%;
     margin: 0.5rem 0.5rem 0rem 0.5rem;
 }
 </style>

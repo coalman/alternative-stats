@@ -1,6 +1,6 @@
 <template lang="pug">
 .section
-  h2.subtitle.is-3 {{ questionText }}
+  h2.subtitle.is-4 {{ questionText }}
 
   .question-choice-container
     .question-choice(v-for="(choice, index) in questionChoices")
@@ -170,8 +170,9 @@ export default {
 }
 
 .response-btn {
-    width: 30%;
-    margin: 0rem 0.5rem 0rem 0.5rem;
+    width: auto;
+    min-width: 30%;
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
 .response-other-btn {
@@ -218,7 +219,7 @@ export default {
     }
 
     .question-choice {
-        width: 35vh;
+        width: 30vh;
         max-width: 80vw;
     }
 
