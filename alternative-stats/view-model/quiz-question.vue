@@ -134,7 +134,9 @@ export default {
 }
 
 .question-choice {
-  min-width: 300px;
+    width: 50%;
+    max-width: 300px;
+    height: 100%;
 }
 
 .question-choice-img {
