@@ -125,6 +125,7 @@ export default {
 
     nextQuestion() {
       this.showResponse = false;
+      this.showOtherResponse = false;
 
       this.$nextTick(() => {
         if (this.lastQuestion) {
