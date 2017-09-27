@@ -3,6 +3,9 @@
 // NOTE(coalman): customize any bulma variables here before bulma.sass import
 $body-background-color: #f5f7fa;
 
+$family-sans-serif: "Catamaran", sans-serif;
+$primary: #c7b299;
+
 @import "~bulma/bulma.sass";
 @import "~buefy/src/scss/buefy";
 

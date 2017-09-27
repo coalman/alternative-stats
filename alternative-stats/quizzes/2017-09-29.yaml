@@ -1,5 +1,17 @@
-name: Gertrude Cox
-publishdate: "2017-09-29"
+name: Gertrude Cox or Great White Shark
+publishdate: 2017-09-29
+images:
+  gertrude:
+    src: gertrude-cox.svg
+    alt: "Gertrude Cox"
+  shark:
+    src: great-white-shark.svg
+    alt: "Great White Shark"
+icons:
+  - src: gertrude-cox.svg
+    alt: "Gertrude Cox"
+  - src: great-white-shark.svg
+    alt: "Great White Shark"
 questions:
   - question: Founded the department of Experimental Statistics at North Carolina State University
     choices:
