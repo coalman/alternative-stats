@@ -13,7 +13,8 @@
     .card
       .card-content
         p.title.is-4 {{ answerTitle }}
-        .content {{ answerResponse }}
+        .content
+          p(v-for="response in answerResponses") {{ response }}
         button.button(type="button" @click="nextQuestion") Next
 </template>
 
@@ -34,6 +35,7 @@ export default {
       quiz: 'currentQuiz',
       question: 'currentQuestion',
       answer: 'currentAnswer',
+      otherAnswers: 'otherAnswers',
       score: 'currentScore',
       lastQuestion: 'lastQuestion'
     }),
@@ -76,12 +78,15 @@ export default {
       }
     },
 
-    answerResponse() {
+    answerResponses() {
       if (!this.answer) {
         return null;
       }
 
-      return this.answer.response;
+      let responses = [];
+      responses.push(this.answer.response);
+      let others = this.otherAnswers.map((ans) => ans.response);
+      return responses.concat(others);
     }
   },
 

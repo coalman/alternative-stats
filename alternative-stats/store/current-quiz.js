@@ -39,6 +39,21 @@ const getters = {
     return question.choices[lastAnswer];
   },
 
+  otherAnswers(state, getters) {
+    const question = getters.currentQuestion;
+
+    if (state.answers.length <= 0 || !question) {
+      return null;
+    }
+
+    const lastAnswer = state.answers[state.answers.length - 1];
+
+    let othersBegin = question.choices.slice(0, lastAnswer);
+    let othersEnd = question.choices.slice(lastAnswer + 1, question.choices.length);
+
+    return othersBegin.concat(othersEnd);
+  },
+
   currentScore(state) {
     return state.scores[state.questionId];
   },
