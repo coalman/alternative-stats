@@ -1,14 +1,27 @@
-var path = require('path');
+const path = require('path');
 
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSvgPlugin = require('html-webpack-inline-svg-plugin');
+
+const svgoConfig = {
+  plugins: [
+    'removeXMLProcInst',
+    'removeXMLNS'
+  ]
+};
+
+const paths = {
+  basedir: path.resolve(__dirname, '..')
+};
 
 module.exports = {
-  context: __dirname,
+  context: paths.basedir,
   cache: true,
 
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, './static'),
+    contentBase: path.resolve(paths.basedir, './static'),
     compress: true,
     port: 8080
   },
@@ -18,15 +31,15 @@ module.exports = {
   },
 
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, './dist'),
+    filename: '[name].[chunkhash].js',
+    path: path.resolve(paths.basedir, './dist'),
     publicPath: ''
   },
 
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'alternative-stats': path.resolve(__dirname, './alternative-stats')
+      'alternative-stats': path.resolve(paths.basedir, './alternative-stats')
     }
   },
 
@@ -68,20 +81,27 @@ module.exports = {
       }, {
         loader: 'image-webpack-loader',
         options: {
-          svgo: {
-            plugins: [
-              'removeXMLProcInst',
-              'removeXMLNS'
-            ]
-          }
+          svgo: svgoConfig
         }
       }]
+    }, {
+      test: /\.pug$/,
+      loader: 'pug-loader'
     }] // end of module.rules
   }, // end of module
 
   plugins: [
     new CopyWebpackPlugin([
       { context: 'static', from: '**/*', to: '.' }
-    ])
+    ]),
+
+    new HtmlWebpackPlugin({
+      template: './alternative-stats/index.pug',
+      filename: 'index.html',
+      inject: false,
+      svgoConfig: svgoConfig
+    }),
+
+    new HtmlWebpackInlineSvgPlugin()
   ]
 };

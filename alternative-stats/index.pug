@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Alternative Stats
+
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    each styleFile in htmlWebpackPlugin.files.css
+      link(rel="stylesheet" href=styleFile)
+    each scriptFile in htmlWebpackPlugin.files.js
+      script(src=scriptFile defer)
+
+  body
+    section.container
+      .title-container
+        img.title-img(src="static/title.svg" inline)
+
+      #app

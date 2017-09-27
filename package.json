@@ -4,10 +4,11 @@
   "description": "A single-page, static web app for Laber's weekly statistician quiz.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server",
+    "build": "webpack --config webpack/production.config.js",
+    "dev": "webpack-dev-server --config webpack/development.config.js",
     "deploy": "gh-pages -d dist",
-    "test": "karma start"
+    "test": "karma start",
+    "preview": "http-server dist"
   },
   "contributors": [
     {
@@ -25,8 +26,12 @@
     "chai": "^4.1.2",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "gh-pages": "^1.0.0",
+    "html-webpack-inline-svg-plugin": "^0.2.2",
+    "html-webpack-plugin": "^2.30.1",
+    "http-server": "^0.10.0",
     "image-webpack-loader": "^3.4.0",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
@@ -45,7 +50,8 @@
     "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "buefy": "^0.5.1",
