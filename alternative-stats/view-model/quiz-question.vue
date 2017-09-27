@@ -12,7 +12,7 @@
   b-modal(:active="showResponse" @close="nextQuestion")
     .card
       .card-content
-        p.title.is-4 {{ answerTitle }}
+        p.title.is-4(:style="answerStyle") {{ answerTitle }}
         .content
           p(v-for="response in answerResponses") {{ response }}
         .response-btn-container
@@ -79,6 +79,22 @@ export default {
       } else {
         return 'Wrong!';
       }
+    },
+
+    answerStyle() {
+      if (!this.answer) {
+        return {};
+      }
+
+      let style = { 'font-weight': '900' };
+
+      if (this.answer.correct) {
+        style.color = '#008416';
+      } else {
+        style.color = '#AF0000';
+      }
+
+      return style;
     },
 
     answerResponses() {
