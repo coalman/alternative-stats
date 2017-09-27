@@ -1,8 +1,8 @@
 <template lang="pug">
-.section
-  h2.subtitle.is-3 Results
+.section.quiz-result
+  h2.subtitle.is-3.quiz-result-title Results
 
-  table.table.is-narrow
+  table.table.is-narrow.quiz-result-table
     thead
       tr
         th Question
@@ -17,25 +17,28 @@
         th {{ totalScore }}
 
   p Did you enjoy the quiz? Share it with your friends!
-    a.button.share-btn(href="https://twitter.com/home?status=Check%20out%20these%20fun%20and%20educational%20quizzes%20on%20famous%20statisticians!%20http%3A//alternative-stats.laber-labs.com" target="_blank")
+  div.quiz-result-share
+    a.button.is-white.share-btn(href="https://twitter.com/home?status=Check%20out%20these%20fun%20and%20educational%20quizzes%20on%20famous%20statisticians!%20http%3A//alternative-stats.laber-labs.com" target="_blank")
       span.icon.is-medium
         i.fa.fa-twitter-square.fa-2x
-    a.button.share-btn(href="https://www.facebook.com/sharer/sharer.php?u=http%3A//alternative-stats.laber-labs.com" target="_blank")
+    a.button.is-white.share-btn(href="https://www.facebook.com/sharer/sharer.php?u=http%3A//alternative-stats.laber-labs.com" target="_blank")
       span.icon.is-medium
         i.fa.fa-facebook-square.fa-2x
   p Check out other Laber Lab projects:
-    a.button.share-btn(href="http://www.laber-labs.com/" target="_blank")
+  div.quiz-result-links
+    a.button.is-white.share-btn(href="http://www.laber-labs.com/" target="_blank")
       span.icon.is-medium
         i.fa.fa-globe.fa-2x
-    a.button.share-btn(href="https://www.youtube.com/channel/UChEmOo4KF-Vt52E0tAyPK3w" target="_blank")
+    a.button.is-white.share-btn(href="https://www.youtube.com/channel/UChEmOo4KF-Vt52E0tAyPK3w" target="_blank")
       span.icon.is-medium
         i.fa.fa-youtube-square.fa-2x
-    a.button.share-btn(href="https://twitter.com/laberlabs" target="_blank")
+    a.button.is-white.share-btn(href="https://twitter.com/laberlabs" target="_blank")
       span.icon.is-medium
         i.fa.fa-twitter-square.fa-2x
 
-  button.button(@click="again") Take it again
-  button.button(@click="done") See more quizzes
+  div
+    button.button.is-primary.result-btn(@click="again") Take it again
+    button.button.is-primary.result-btn(@click="done") See more quizzes
 </template>
 
 <script>
@@ -99,6 +102,10 @@ export default {
 </script>
 
 <style lang="scss">
+.quiz-result-title {
+    font-weight: 900;
+}
+
 .question-result-index {
   width: 80%;
 }
@@ -111,5 +118,27 @@ export default {
   margin-left: 4px;
   width: 24px;
   height: 24px;
+}
+
+.quiz-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quiz-result-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz-result-share {
+    margin-bottom: 0.5rem;
+}
+
+.quiz-result-links {
+    margin-bottom: 1.0rem;
 }
 </style>

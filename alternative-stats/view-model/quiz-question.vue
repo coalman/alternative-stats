@@ -111,7 +111,7 @@ export default {
             name: 'quizQuestion',
             params: {
               quizId: this.$route.params.quizId,
-              questionId: this.questionId + 1
+              questionId: Number(this.questionId) + 1
             }
           });
 
@@ -124,13 +124,21 @@ export default {
 </script>
 
 <style lang="scss">
+.question-choice-img:hover {
+    cursor: pointer;
+}
+
+.question-choice-text {
+    text-align: center;
+}
+
 .question-choice-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 200px;
 }
 
 .question-choice {
@@ -140,14 +148,13 @@ export default {
 }
 
 .question-choice-img {
-  width: 100%;
+    width: 100%;
 }
 
-.question-choice-img:hover {
-  cursor: pointer;
-}
-
-.question-choice-text {
-  text-align: center;
+.result-btn {
+    width: 35%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
 }
 </style>
