@@ -48,11 +48,6 @@ export default {
 </script>
 
 <style lang="scss">
-.quiz-card {
-    width: 33%;
-    max-width: 400px;
-}
-
 .quiz-card:hover {
     cursor: pointer;
 }
@@ -77,5 +72,18 @@ export default {
     text-align: center;
     font-size: small;
     font-weight: bold;
+}
+
+@media screen and (orientation:landscape) {
+    .quiz-card {
+        width: 33%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .quiz-card {
+        width: 100%;
+    }
 }
 </style>
