@@ -15,7 +15,9 @@
         p.title.is-4 {{ answerTitle }}
         .content
           p(v-for="response in answerResponses") {{ response }}
-        button.button(type="button" @click="nextQuestion") Next
+        .response-btn-container
+          button.button.is-primary.response-btn(type="button" @click="nextQuestion") Next
+          button.button.response-other-btn.response-btn(type="button" @click="showOtherResponse = !showOtherResponse") {{ showOtherResponse ? "Hide Other Response" : "Show Other Response" }}
 </template>
 
 <script>
@@ -26,7 +28,8 @@ export default {
 
   data() {
     return {
-      showResponse: false
+      showResponse: false,
+      showOtherResponse: false
     };
   },
 
@@ -85,8 +88,12 @@ export default {
 
       let responses = [];
       responses.push(this.answer.response);
-      let others = this.otherAnswers.map((ans) => ans.response);
-      return responses.concat(others);
+      if (this.showOtherResponse) {
+        let others = this.otherAnswers.map((ans) => ans.response);
+        return responses.concat(others);
+      } else {
+        return responses;
+      }
     }
   },
 
@@ -156,10 +163,31 @@ export default {
     width: 100%;
 }
 
-.result-btn {
-    width: 35%;
-    min-width: 200px;
-    max-width: 400px;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
+.response-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.response-btn {
+    width: 30%;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.response-other-btn {
+    color: #c7b299;
+    border-color: #c7b299;
+}
+
+.response-other-btn:focus {
+    color: #c7b299;
+    border-color: #c7b299;
+}
+
+.response-other-btn:hover {
+    color: #c7b299;
+    border-color: #c7b299;
 }
 </style>

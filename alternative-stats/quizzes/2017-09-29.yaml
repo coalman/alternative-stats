@@ -43,7 +43,7 @@ questions:
         correct: true
       - image: great-white-shark.svg
         alt: "Great white shark"
-        response: "The great white shark was never risen above the rank of treasurer in the American Statistical Association."
+        response: "The great white shark has never risen above the rank of treasurer in the American Statistical Association."
         correct: false
 
   - question: Upon graduating high school, had aspirations to become a deaconess
@@ -54,7 +54,7 @@ questions:
         correct: true
       - image: great-white-shark.svg
         alt: "Great white shark"
-        response: "The great white shark turned away from god after a brief (and wildly unsuccesful) attempt at becoming a snake handler."
+        response: "The great white shark turned away from God after a brief (and wildly unsuccessful) attempt at becoming a snake handler."
         correct: false
 
   - question: Received a Bachelor of Science (BS) in mathematics and a Master of Science (MS) in statistics from Iowa State University

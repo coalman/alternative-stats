@@ -141,4 +141,11 @@ export default {
 .quiz-result-links {
     margin-bottom: 1.0rem;
 }
+
+.result-btn {
+    width: 35%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
 </style>
