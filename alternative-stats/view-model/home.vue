@@ -1,13 +1,14 @@
 <template lang="pug">
 .section
-  h1.title Quizzes
-  template(v-for="quiz in quizLinks")
-    article.card.quiz-card(@click="startQuiz(quiz.link)")
-      figure.card-image.quiz-img-container
-        img.quiz-img(v-for="icon in quiz.icons" :src="icon.src" :alt="icon.alt")
-      .card-content.quiz-content-container
-        .content.quiz-content
-          a.quiz-link {{ quiz.name }}
+  h1.title.home-title Take a Quiz
+  .quiz-list
+    template(v-for="quiz in quizLinks")
+      article.card.quiz-card(@click="startQuiz(quiz.link)")
+        figure.card-image.quiz-img-container
+          img.quiz-img(v-for="icon in quiz.icons" :src="icon.src" :alt="icon.alt")
+        .card-content.quiz-content-container
+          .content.quiz-content
+            a.quiz-link {{ quiz.name }}
 </template>
 
 <script>
@@ -76,14 +77,29 @@ export default {
 
 @media screen and (orientation:landscape) {
     .quiz-card {
-        width: 33%;
+        width: 32%;
         max-width: 400px;
+        margin: 0.5%;
     }
 }
 
 @media screen and (orientation:portrait) {
     .quiz-card {
-        width: 100%;
+        width: 99%;
+        margin: 0.5%;
     }
+}
+
+.home-title {
+  font-weight: 900;
+  text-align: center;
+}
+
+.quiz-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 </style>
