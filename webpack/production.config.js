@@ -1,5 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 
 const baseCfg = require('./development.config');
@@ -23,7 +23,12 @@ const delta = {
   },
 
   plugins: [
-    new ExtractTextPlugin('style.[contenthash].css')
+    new ExtractTextPlugin('style.[contenthash].css'),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: 'production'
+      }
+    })
   ]
 };
 
