@@ -1,0 +1,95 @@
+name: John Tukey or Drawing of a Squash Playing Squash
+publishdate: 2017-10-03
+icons:
+  - src: john-tukey.svg
+    alt: "John Tukey"
+  - src: squash-player.svg
+    alt: "Drawing of a Squash Playing Squash"
+questions:
+  - question: Before pursuing statistics, was a chemist and topologist
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey has a masters degree in chemistry from Brown University as well as a PhD in mathematics from Princeton University."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The drawing of a squash playing squash has no formal training in chemistry or mathematics. However, it was once used as a bookmark in a Dan Brown novel, whereupon it absorbed a bit of numerology. Which Dan Brown novel you ask? The drawing of a squash playing a squash, like the rest of humanity, can't tell them apart."
+        correct: false
+
+  - question: A pioneer in data visualization and graphics
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey is credited with the creation of the box-and-whiskers plot as well as the stem-and-leaf diagram. Sources close to Tukey report that he has a fondness for hyphenation."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The drawing of a squash playing squash was a pioneer on the Oregon Trail. He died of dysentery."
+        correct: false
+
+  - question: Recipient of the National Medal of Science and member of the National Academies of Science
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey was also the recipient of the National Medal of Honor (from the IEEE), the Deming Medal, and the James Madison Medal, among others. To show his gratitude, Tukey never removed these medals&mdash;even when he slept. His refusal to remove them in an MRI machine lead to his tragic death in 2000."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The picture of a squash playing squash was actually the recipient of `Most Creative Drawing' in Mrs. Haver-French's 4th period Visual Arts Studio class; Mrs. Haver-French remarked that the drawing was `cute.' While the artist was happy to receive the honor, they wished Mrs. Haver-French would refrain from writing her critique directly on the artwork with red permanent marker."
+        correct: false
+
+  - question: Worked as a statistician at Bell Labs and an instructor in the Mathematics Department at Princeton University
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey also served on the President's Science Advisory Committee as well as multiple technical advisory groups for nuclear weapons testing."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The picture of a squash playing squash was an instructor of media studies at Vassar College. However, his tenure case was denied on the basis that he was not sentient. His promotion and tenure report claimed that many faculty and students found the fact that he was drawn on vellum sourced from human skin to be `deeply unsettling.'"
+        correct: false
+
+  - question: Worked with the Fire Control Research Office during World War II
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey worked alongside Samuel S. Wilks and William Cocheran. Approximately two decades later, he would be awarded the Samuel S. Wilks Award for his contributions to the war effort."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The picture of a squash playing squash has been mortally terrified of fire ever since he personally witnessed the burning of his brother, a drawing of a `rapping roll of gift wrap.'"
+        correct: false
+
+  - question: Conceived during a lecture explaining line styles in Mrs. Haver-French's 4th Period Visual Arts Studio class
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey was conceived during a radio lecture about the American Neutrality Pact."
+        correct: false
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The inspiration for a squash playing squash definitely did NOT come from noting the resemblance between a summer squash and Mrs. Haver-French's body shape."
+        correct: true
+
+  - question: Wears a headband to keep sweat from affecting vision during gameplay
+    choices:
+      - image: john-tukey.svg
+        alt: "John Tukey"
+        response: "Tukey avoided Bayesian statistics to ensure his vision remained clear."
+        correct: false
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The drawing of a squash playing squash also likes that he can easily affix a head mirror to his headband when he's impersonating a doctor."
+        correct: true
+        
+  - question: Adding an `R' to this fellow's name is good for a laugh
+    choices:
+      - image: john-tukey.svg
+        alt: "John-Tukey"
+        response: "Tukey becomes... Trukey?  Tukery?  Tukeyr? Those aren't funny."
+        correct: false
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "Squash becomes... Squarsh! Comedy gold!"
+        correct: true
