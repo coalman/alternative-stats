@@ -5,6 +5,7 @@ const merge = require('webpack-merge');
 const baseCfg = require('./development.config');
 
 const delta = {
+  devtool: 'source-map',
   module: {
     rules: [{
       test: /\.scss$/,
