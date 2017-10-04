@@ -4,7 +4,7 @@
 
   .question-choice-container
     .question-choice(v-for="(choice, index) in questionChoices")
-      img.question-choice-img(:src="choice.image" :alt="choice.alt" @click="onChoiceClick(index)")
+      img.question-choice-img(:src="choice.image" :alt="choice.alt" @click="onChoiceClick(index)" draggable="false")
       p.question-choice-text {{ choice.alt }}
 
   p.subtitle {{ progressText }}
@@ -155,6 +155,11 @@ export default {
 <style lang="scss">
 .question-choice-img:hover {
     cursor: pointer;
+}
+
+.question-choice-img {
+    user-drag: none;
+    user-select: none;
 }
 
 .question-choice-text {

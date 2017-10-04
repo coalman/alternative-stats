@@ -5,7 +5,7 @@
     template(v-for="quiz in quizLinks")
       article.card.quiz-card(@click="startQuiz(quiz.link)")
         figure.card-image.quiz-img-container
-          img.quiz-img(v-for="icon in quiz.icons" :src="icon.src" :alt="icon.alt")
+          img.quiz-img(v-for="icon in quiz.icons" :src="icon.src" :alt="icon.alt" draggable="false")
         .card-content.quiz-content-container
           .content.quiz-content
             a.quiz-link {{ quiz.name }}
@@ -62,7 +62,9 @@ export default {
 }
 
 .quiz-img {
-    width: 50%
+    width: 50%;
+    user-drag: none;
+    user-select: none;
 }
 
 .quiz-content-container {
