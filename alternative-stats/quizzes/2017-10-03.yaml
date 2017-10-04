@@ -93,3 +93,14 @@ questions:
         alt: "Drawing of a squash playing squash"
         response: "Squash becomes... Squarsh! Comedy gold!"
         correct: true
+
+  - question: Invented the fast Fourier transform (FFT) algorithm with James Cooley
+    choices:
+      - image: john-tukey.svg
+        alt: "John-Tukey"
+        response: "The Cooley-Tukey algorithm works by chopping the problem up into tiny pieces, which is unfortunately what happened to James Cooley after he refused to call it the Tukey-Cooley algorithm."
+        correct: true
+      - image: squash-player.svg
+        alt: "Drawing of a squash playing squash"
+        response: "The drawing of the squash playing squash invented the much less popular Meandering Fourier Transform (MFT), which has a long runtime and frequently produces the wrong answer."
+        correct: false
