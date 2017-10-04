@@ -1452,7 +1452,7 @@ var _utils = __webpack_require__(55);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const quizRequire = __webpack_require__(56);
-const quizList = quizRequire.keys().map(quizFile => quizRequire(quizFile)).sort((a, b) => new Date(b.publishdate) - new Date(a.publishdate));
+const quizList = quizRequire.keys().map(quizFile => quizRequire(quizFile)).sort((a, b) => new Date(a.publishdate) - new Date(b.publishdate));
 
 function getQuizId(quiz) {
       return (0, _slugify2.default)(quiz.name, { lower: true });
@@ -14181,7 +14181,7 @@ function createRoutes() {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_home_vue__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_home_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3190de28_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_home_vue__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4768946f_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_home_vue__ = __webpack_require__(59);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -14200,7 +14200,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_home_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3190de28_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_home_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4768946f_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_home_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -14216,9 +14216,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3190de28", Component.options)
+    hotAPI.createRecord("data-v-4768946f", Component.options)
   } else {
-    hotAPI.reload("data-v-3190de28", Component.options)
+    hotAPI.reload("data-v-4768946f", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -14239,13 +14239,13 @@ var content = __webpack_require__(23);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("66ff6da2", content, false);
+var update = __webpack_require__(1)("5bc776f6", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3190de28\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue", function() {
-     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3190de28\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue");
+   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4768946f\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue", function() {
+     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4768946f\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -14986,7 +14986,7 @@ module.exports = {"name":"Gertrude Cox or Great White Shark","publishdate":"2017
 /* 58 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"John Tukey or Drawing of a Squash Playing Squash","publishdate":"2017-10-03T00:00:00.000Z","icons":[{"src":"john-tukey.svg","alt":"John Tukey"},{"src":"squash-player.svg","alt":"Drawing of a Squash Playing Squash"}],"questions":[{"question":"Before pursuing statistics, was a chemist and topologist","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey has a masters degree in chemistry from Brown University as well as a PhD in mathematics from Princeton University.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash has no formal training in chemistry or mathematics. However, it was once used as a bookmark in a Dan Brown novel, whereupon it absorbed a bit of numerology. Which Dan Brown novel you ask? The drawing of a squash playing a squash, like the rest of humanity, can't tell them apart.","correct":false}]},{"question":"A pioneer in data visualization and graphics","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey is credited with the creation of the box-and-whiskers plot as well as the stem-and-leaf diagram. Sources close to Tukey report that he has a fondness for hyphenation.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash was a pioneer on the Oregon Trail. He died of dysentery.","correct":false}]},{"question":"Recipient of the National Medal of Science and member of the National Academies of Science","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey was also the recipient of the National Medal of Honor (from the IEEE), the Deming Medal, and the James Madison Medal, among others. To show his gratitude, Tukey never removed these medals (even when he slept). His refusal to remove them in an MRI machine lead to his tragic death in 2000.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash was actually the recipient of `Most Creative Drawing' in Mrs. Haver-French's 4th period Visual Arts Studio class; Mrs. Haver-French remarked that the drawing was `cute.' While the artist was happy to receive the honor, they wished Mrs. Haver-French would refrain from writing her critique directly on the artwork with red permanent marker.","correct":false}]},{"question":"Worked as a statistician at Bell Labs and an instructor in the Mathematics Department at Princeton University","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey also served on the President's Science Advisory Committee as well as multiple technical advisory groups for nuclear weapons testing.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash was an instructor of media studies at Vassar College. However, his tenure case was denied on the basis that he was not sentient. His promotion and tenure report claimed that many faculty and students found the fact that he was drawn on vellum sourced from human skin to be `deeply unsettling.'","correct":false}]},{"question":"Worked with the Fire Control Research Office during World War II","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey worked alongside Samuel S. Wilks and William Cocheran. Approximately two decades later, he would be awarded the Samuel S. Wilks Award for his contributions to the war effort.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash has been mortally terrified of fire ever since he personally witnessed the burning of his brother, a drawing of a `rapping roll of gift wrap.'","correct":false}]},{"question":"Conceived during a lecture explaining line styles in Mrs. Haver-French's 4th Period Visual Arts Studio class","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey was conceived during a radio lecture about the American Neutrality Pact.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The inspiration for a squash playing squash definitely did NOT come from noting the resemblance between a summer squash and Mrs. Haver-French's body shape.","correct":true}]},{"question":"Wears a headband to keep sweat from affecting vision during gameplay","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey avoided Bayesian statistics to ensure his vision remained clear.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash also likes that he can easily affix a head mirror to his headband when he's impersonating a doctor.","correct":true}]},{"question":"Adding an `R' to this fellow's name is good for a laugh","choices":[{"image":"john-tukey.svg","alt":"John-Tukey","response":"Tukey becomes... Trukey?  Tukery?  Tukeyr? Those aren't funny.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"Squash becomes... Squarsh! Comedy gold!","correct":true}]}]}
+module.exports = {"name":"John Tukey or Drawing of a Squash Playing Squash","publishdate":"2017-10-03T00:00:00.000Z","icons":[{"src":"john-tukey.svg","alt":"John Tukey"},{"src":"squash-player.svg","alt":"Drawing of a Squash Playing Squash"}],"questions":[{"question":"Before pursuing statistics, was a chemist and topologist","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey has a masters degree in chemistry from Brown University as well as a PhD in mathematics from Princeton University.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash has no formal training in chemistry or mathematics. However, it was once used as a bookmark in a Dan Brown novel, whereupon it absorbed a bit of numerology. Which Dan Brown novel you ask? The drawing of a squash playing a squash, like the rest of humanity, can't tell them apart.","correct":false}]},{"question":"A pioneer in data visualization and graphics","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey is credited with the creation of the box-and-whiskers plot as well as the stem-and-leaf diagram. Sources close to Tukey report that he has a fondness for hyphenation.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash was a pioneer on the Oregon Trail. He died of dysentery.","correct":false}]},{"question":"Recipient of the National Medal of Science and member of the National Academies of Science","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey was also the recipient of the National Medal of Honor (from the IEEE), the Deming Medal, and the James Madison Medal, among others. To show his gratitude, Tukey never removed these medals&mdash;even when he slept. His refusal to remove them in an MRI machine lead to his tragic death in 2000.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash was actually the recipient of `Most Creative Drawing' in Mrs. Haver-French's 4th period Visual Arts Studio class; Mrs. Haver-French remarked that the drawing was `cute.' While the artist was happy to receive the honor, they wished Mrs. Haver-French would refrain from writing her critique directly on the artwork with red permanent marker.","correct":false}]},{"question":"Worked as a statistician at Bell Labs and an instructor in the Mathematics Department at Princeton University","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey also served on the President's Science Advisory Committee as well as multiple technical advisory groups for nuclear weapons testing.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash was an instructor of media studies at Vassar College. However, his tenure case was denied on the basis that he was not sentient. His promotion and tenure report claimed that many faculty and students found the fact that he was drawn on vellum sourced from human skin to be `deeply unsettling.'","correct":false}]},{"question":"Worked with the Fire Control Research Office during World War II","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey worked alongside Samuel S. Wilks and William Cocheran. Approximately two decades later, he would be awarded the Samuel S. Wilks Award for his contributions to the war effort.","correct":true},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The picture of a squash playing squash has been mortally terrified of fire ever since he personally witnessed the burning of his brother, a drawing of a `rapping roll of gift wrap.'","correct":false}]},{"question":"Conceived during a lecture explaining line styles in Mrs. Haver-French's 4th Period Visual Arts Studio class","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey was conceived during a radio lecture about the American Neutrality Pact.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The inspiration for a squash playing squash definitely did NOT come from noting the resemblance between a summer squash and Mrs. Haver-French's body shape.","correct":true}]},{"question":"Wears a headband to keep sweat from affecting vision during gameplay","choices":[{"image":"john-tukey.svg","alt":"John Tukey","response":"Tukey avoided Bayesian statistics to ensure his vision remained clear.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"The drawing of a squash playing squash also likes that he can easily affix a head mirror to his headband when he's impersonating a doctor.","correct":true}]},{"question":"Adding an `R' to this fellow's name is good for a laugh","choices":[{"image":"john-tukey.svg","alt":"John-Tukey","response":"Tukey becomes... Trukey?  Tukery?  Tukeyr? Those aren't funny.","correct":false},{"image":"squash-player.svg","alt":"Drawing of a squash playing squash","response":"Squash becomes... Squarsh! Comedy gold!","correct":true}]}]}
 
 /***/ }),
 /* 59 */
@@ -15034,7 +15034,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3190de28", esExports)
+     require("vue-hot-reload-api").rerender("data-v-4768946f", esExports)
   }
 }
 
@@ -15046,7 +15046,7 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_vue__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7447d93c_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_260d16e5_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_vue__ = __webpack_require__(64);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -15065,7 +15065,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7447d93c_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_260d16e5_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -15081,9 +15081,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7447d93c", Component.options)
+    hotAPI.createRecord("data-v-260d16e5", Component.options)
   } else {
-    hotAPI.reload("data-v-7447d93c", Component.options)
+    hotAPI.reload("data-v-260d16e5", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -15104,13 +15104,13 @@ var content = __webpack_require__(62);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("7095bf96", content, false);
+var update = __webpack_require__(1)("c746f586", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7447d93c\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz.vue", function() {
-     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7447d93c\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz.vue");
+   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260d16e5\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz.vue", function() {
+     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-260d16e5\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -15180,7 +15180,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7447d93c", esExports)
+     require("vue-hot-reload-api").rerender("data-v-260d16e5", esExports)
   }
 }
 
@@ -15192,7 +15192,7 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_question_vue__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_question_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_question_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_16ee92a1_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_question_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3bc5d27e_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_question_vue__ = __webpack_require__(69);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -15211,7 +15211,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_question_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_16ee92a1_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_question_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3bc5d27e_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_question_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -15227,9 +15227,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-16ee92a1", Component.options)
+    hotAPI.createRecord("data-v-3bc5d27e", Component.options)
   } else {
-    hotAPI.reload("data-v-16ee92a1", Component.options)
+    hotAPI.reload("data-v-3bc5d27e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -15250,13 +15250,13 @@ var content = __webpack_require__(67);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("57b7fba3", content, false);
+var update = __webpack_require__(1)("7a6eb674", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-16ee92a1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-question.vue", function() {
-     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-16ee92a1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-question.vue");
+   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3bc5d27e\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-question.vue", function() {
+     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3bc5d27e\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-question.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -15516,7 +15516,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-16ee92a1", esExports)
+     require("vue-hot-reload-api").rerender("data-v-3bc5d27e", esExports)
   }
 }
 
@@ -15528,7 +15528,7 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_result_vue__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_result_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_result_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d5aecfd0_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_result_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d0cfa996_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_result_vue__ = __webpack_require__(74);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -15547,7 +15547,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_quiz_result_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d5aecfd0_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_result_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d0cfa996_hasScoped_false_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_quiz_result_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -15563,9 +15563,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d5aecfd0", Component.options)
+    hotAPI.createRecord("data-v-d0cfa996", Component.options)
   } else {
-    hotAPI.reload("data-v-d5aecfd0", Component.options)
+    hotAPI.reload("data-v-d0cfa996", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -15586,13 +15586,13 @@ var content = __webpack_require__(72);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("337897f6", content, false);
+var update = __webpack_require__(1)("ec08ab54", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d5aecfd0\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-result.vue", function() {
-     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d5aecfd0\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-result.vue");
+   module.hot.accept("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0cfa996\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-result.vue", function() {
+     var newContent = require("!!../../node_modules/raw-loader/index.js!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0cfa996\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./quiz-result.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -15817,7 +15817,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-d5aecfd0", esExports)
+     require("vue-hot-reload-api").rerender("data-v-d0cfa996", esExports)
   }
 }
 
@@ -17292,4 +17292,4 @@ module.exports = shuffle;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=alternative-stats.d8d1ca24f57183bc0376.js.map
+//# sourceMappingURL=alternative-stats.633619a892fc1bb9228a.js.map
