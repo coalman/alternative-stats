@@ -32,7 +32,7 @@ questions:
     choices:
       - image: john-tukey.svg
         alt: "John Tukey"
-        response: "Tukey was also the recipient of the National Medal of Honor (from the IEEE), the Deming Medal, and the James Madison Medal, among others. To show his gratitude, Tukey never removed these medals&mdash;even when he slept. His refusal to remove them in an MRI machine lead to his tragic death in 2000."
+        response: "Tukey was also the recipient of the National Medal of Honor (from the IEEE), the Deming Medal, and the James Madison Medal, among others. To show his gratitude, Tukey never removed these medals (even when he slept). His refusal to remove them in an MRI machine lead to his tragic death in 2000."
         correct: true
       - image: squash-player.svg
         alt: "Drawing of a squash playing squash"
