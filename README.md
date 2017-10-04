@@ -11,6 +11,7 @@ Then run `npm run dev -- --open` or `./node_modules/.bin/webpack-dev-server --op
 ## Publishing
 
 ```
+# make sure you push new content to the github repo
 $ npm run build
-$ npm run publish
+$ npm run deploy
 ```
