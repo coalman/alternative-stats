@@ -50,12 +50,6 @@ module.exports = {
       use: [{
         loader: 'babel-loader',
         options: {
-          presets: [['env', {
-		    targets: {
-              browsers: ['> 1%', 'last 2 versions', 'ios_saf >= 9.3.2', 'ie >= 10']
-			}	
-		  }]],
-		  plugins: ['transform-runtime', 'transform-object-rest-spread'],
           cacheDirectory: true
         }
       }]
