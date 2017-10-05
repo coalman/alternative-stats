@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import './style/site.scss';
 
 import Buefy from 'buefy';
