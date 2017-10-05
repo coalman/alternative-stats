@@ -14333,31 +14333,35 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 exports.default = {
-  data() {
+  data: function data() {
     return {};
   },
 
-  computed: (0, _extends3.default)({}, (0, _vuex.mapState)({
-    quizzes: state => state.quizzes.list
-  }), {
 
-    quizLinks() {
-      return this.quizzes.map(quiz => ({
-        name: quiz.name,
-        publishdate: quiz.publishdate,
-        icons: quiz.icons,
-        link: {
-          name: 'quiz',
-          params: {
-            quizId: (0, _quizzes.getQuizId)(quiz)
+  computed: (0, _extends3.default)({}, (0, _vuex.mapState)({
+    quizzes: function quizzes(state) {
+      return state.quizzes.list;
+    }
+  }), {
+    quizLinks: function quizLinks() {
+      return this.quizzes.map(function (quiz) {
+        return {
+          name: quiz.name,
+          publishdate: quiz.publishdate,
+          icons: quiz.icons,
+          link: {
+            name: 'quiz',
+            params: {
+              quizId: (0, _quizzes.getQuizId)(quiz)
+            }
           }
-        }
-      }));
+        };
+      });
     }
   }),
 
   methods: {
-    startQuiz(link) {
+    startQuiz: function startQuiz(link) {
       this.$router.push(link);
     }
   }
@@ -15150,11 +15154,10 @@ exports.default = {
     quizId: String
   },
 
-  data() {
+  data: function data() {
     return {};
   },
-
-  created() {
+  created: function created() {
     this.$store.dispatch({
       type: 'startQuiz',
       quizId: this.quizId
@@ -15298,12 +15301,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
   props: ['questionId'],
 
-  data() {
+  data: function data() {
     return {
       showResponse: false,
       showOtherResponse: false
     };
   },
+
 
   computed: (0, _extends3.default)({}, (0, _vuex.mapGetters)({
     quiz: 'currentQuiz',
@@ -15313,34 +15317,30 @@ exports.default = {
     score: 'currentScore',
     lastQuestion: 'lastQuestion'
   }), {
+    progressText: function progressText() {
+      var qId = Number(this.questionId) + 1;
+      var total = this.quiz.questions.length;
 
-    progressText() {
-      const qId = Number(this.questionId) + 1;
-      const total = this.quiz.questions.length;
-
-      return `Progress: ${qId} / ${total}`;
+      return 'Progress: ' + qId + ' / ' + total;
     },
-
-    questionText() {
+    questionText: function questionText() {
       if (this.question) {
-        const qText = this.question.question;
-        const qId = Number(this.questionId) + 1;
+        var qText = this.question.question;
+        var qId = Number(this.questionId) + 1;
 
-        return `${qId}) ${qText}`;
+        return qId + ') ' + qText;
       }
 
       return null;
     },
-
-    questionChoices() {
+    questionChoices: function questionChoices() {
       if (this.question) {
         return this.question.choices;
       }
 
       return null;
     },
-
-    answerTitle() {
+    answerTitle: function answerTitle() {
       if (!this.answer) {
         return null;
       }
@@ -15351,13 +15351,12 @@ exports.default = {
         return 'Wrong!';
       }
     },
-
-    answerStyle() {
+    answerStyle: function answerStyle() {
       if (!this.answer) {
         return {};
       }
 
-      let style = { 'font-weight': '900' };
+      var style = { 'font-weight': '900' };
 
       if (this.answer.correct) {
         style.color = '#008416';
@@ -15367,16 +15366,17 @@ exports.default = {
 
       return style;
     },
-
-    answerResponses() {
+    answerResponses: function answerResponses() {
       if (!this.answer) {
         return null;
       }
 
-      let responses = [];
+      var responses = [];
       responses.push(this.answer.response);
       if (this.showOtherResponse) {
-        let others = this.otherAnswers.map(ans => ans.response);
+        var others = this.otherAnswers.map(function (ans) {
+          return ans.response;
+        });
         return responses.concat(others);
       } else {
         return responses;
@@ -15385,7 +15385,7 @@ exports.default = {
   }),
 
   methods: {
-    onChoiceClick(index) {
+    onChoiceClick: function onChoiceClick(index) {
       this.showResponse = true;
 
       this.$store.dispatch({
@@ -15393,29 +15393,30 @@ exports.default = {
         answer: index
       });
     },
+    nextQuestion: function nextQuestion() {
+      var _this = this;
 
-    nextQuestion() {
       this.showResponse = false;
       this.showOtherResponse = false;
 
-      this.$nextTick(() => {
-        if (this.lastQuestion) {
-          this.$router.replace({
+      this.$nextTick(function () {
+        if (_this.lastQuestion) {
+          _this.$router.replace({
             name: 'quizResult',
             params: {
-              quizId: this.$route.params.quizId
+              quizId: _this.$route.params.quizId
             }
           });
         } else {
-          this.$router.replace({
+          _this.$router.replace({
             name: 'quizQuestion',
             params: {
-              quizId: this.$route.params.quizId,
-              questionId: Number(this.questionId) + 1
+              quizId: _this.$route.params.quizId,
+              questionId: Number(_this.questionId) + 1
             }
           });
 
-          this.$store.dispatch('nextQuestion');
+          _this.$store.dispatch('nextQuestion');
         }
       });
     }
@@ -15633,52 +15634,60 @@ var _vuex = __webpack_require__(0);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  data() {
+  data: function data() {
     return {};
   },
 
+
   computed: (0, _extends3.default)({}, (0, _vuex.mapState)({
-    answers: state => state.currentQuiz.answers,
-    scores: state => state.currentQuiz.scores
+    answers: function answers(state) {
+      return state.currentQuiz.answers;
+    },
+    scores: function scores(state) {
+      return state.currentQuiz.scores;
+    }
   }), (0, _vuex.mapGetters)({
     quiz: 'currentQuiz',
     totalScore: 'totalScore'
   }), {
+    choices: function choices() {
+      var _this = this;
 
-    choices() {
-      return this.answers.map((answer, index) => {
-        const question = this.quiz.questions[index];
+      return this.answers.map(function (answer, index) {
+        var question = _this.quiz.questions[index];
 
         return question.choices[answer];
       });
     },
+    results: function results() {
+      var _this2 = this;
 
-    results() {
-      return this.choices.map((choice, index) => ({
-        score: this.scores[index]
-      }));
+      return this.choices.map(function (choice, index) {
+        return {
+          score: _this2.scores[index]
+        };
+      });
     }
   }),
 
   methods: {
-    again() {
-      const quizId = this.$route.params.quizId;
+    again: function again() {
+      var quizId = this.$route.params.quizId;
 
       this.$store.dispatch({
         type: 'startQuiz',
-        quizId
+        quizId: quizId
       });
 
       this.$router.replace({
         name: 'quizQuestion',
         params: {
-          quizId,
+          quizId: quizId,
           questionId: 0
         }
       });
     },
-
-    done() {
+    done: function done() {
       this.$router.push('/');
     }
   }
@@ -17289,4 +17298,4 @@ module.exports = shuffle;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=alternative-stats.38373141a1bcf5417af1.js.map
+//# sourceMappingURL=alternative-stats.b725cf9da8e1219b5740.js.map
