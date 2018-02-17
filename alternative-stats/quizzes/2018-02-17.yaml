@@ -1,0 +1,95 @@
+name: R.A. Fisher or The Med Salad
+publishdate: 2018-02-17
+icons:
+  - src: ra-fisher.svg
+    alt: "R.A. Fisher"
+  - src: med-salad.svg
+    alt: "The Med Salad"
+questions:
+  - question: Said to be the “greatest biologist since Charles Darwin” by Richard Dawkins
+    choices:
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher made foundational contributions to statistics, biology, and genetics, making him arguably one of the greatest scientists of the 20th century."
+        correct: true
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "In Dawkins’ book, `The God Delusion,’ he wrote that the Med Salad was “...the greatest combination of noodles, greens, and a subtly spicy yogurt sauce since Charles Darwin.”"
+        correct: false
+
+  - question: Knighted by Queen Elizabeth in 1952 for contributions to science
+    choices:
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher was also awarded the Linnean Society of London Darwin–Wallace Medal in 1958. Today, multiple prestigious statistical prizes are named after him including the R.A. Fisher Lectureship, the Fisher Memorial Lecture, and the Sir Rondald Fisher Lecture."
+        correct: true
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "However, the Med Salad does play shortstop for the Knights of Columbus softball team in Leesberg, Ohio."
+        correct: false
+
+  - question: Coined the phrase “test of significance”
+    choices:
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher also invented the p-value, though it was Neyman and Pearson who compared the p-value to a fixed threshold in the context of hypothesis testing."
+        correct: true
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "The Med Salad is more commonly associated with the phrase “test of listeria.”"
+        correct: false
+
+  - question: Called the `father of modern statistics’ for his many contributions to the field including maximum likelihood, analysis of variance, and design of experiments
+    choices:
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher was also credited for discriminant analysis and deriving the sampling distribution of the T- and F-statistics."
+        correct: true
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "The Med Salad is at best the matronly aunt of modern statistics."
+        correct: false
+
+  - question: Labeled with a chili pepper denoting spice-level
+    choices:
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "The Med Salad can also be made gluten-free if you have a fictional gluten allergy."
+        correct: true
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher was labeled with a chili pepper for his `hotness’ on RateMyProfessor.com. He was also labeled with a studhorse icon for his intense animal magnetism."
+        correct: false
+
+  - question: Posited the `sexy son’ hypothesis wherein mate selection is governed by the anticipated attractiveness of potential male offspring
+    choices:
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher's hypothesis has inspired us to build a dating website based on this premise; we are currently looking for highly motivated investors! It could be you!"
+        correct: true
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "The Med Salad is the sexy son of a macaroni salad and a pile of arugula."
+        correct: false
+
+  - question: Can be combined with chicken for a healthy and dash-diet compliant meal
+    choices:
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "For an extra health boost, consider dressing the Med Salad with a smoothie."
+        correct: true
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Combining Fisher with chicken leads to psittacosis."
+        correct: false
+
+  - question: Conceived by Arron Kennedy, Noodles and Company Founder, who felt that there “weren’t enough noodle restaurants in the United States”
+    choices:
+      - image: med-salad.svg
+        alt: "The Med Salad"
+        response: "Yes, but who DIDN'T look at America in the 1990s and think, “these people need to be eating more noodles”?"
+        correct: true
+      - image: ra-fisher.svg
+        alt: "R.A. Fisher"
+        response: "Fisher was conceived by Katie Heath and George Fisher. He was born with a stillborn twin which, we assume, Fisher strangled in the womb."
+        correct: false
