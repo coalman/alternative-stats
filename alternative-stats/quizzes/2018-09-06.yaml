@@ -14,7 +14,7 @@ questions:
         correct: true
       - image: danjou-pear.svg
         alt: "Pierre the D'Anjou Pear"
-        response: "Pierre took a year off during college to "find himself," during which time he was inspired to join a movement to ban the use of the adjective "pear-shaped" to describe a person with a big butt."
+        response: "Pierre took a year off during college to 'find himself,' during which time he was inspired to join a movement to ban the use of the adjective 'pear-shaped' to describe a person with a big butt."
         correct: false
 
   - question: Credited with establishing the discipline of mathematical statistics
@@ -25,10 +25,10 @@ questions:
         correct: true
       - image: danjou-pear.svg
         alt: "Pierre the D'Anjou Pear"
-        response: "Aside from his regular appearance in fruit cocktails, Pierre plays a title role in the famous pear & gorgonzola salad, among other tasty dishes. He also brags about the pear tree being the first and, in his words, the “best of the gifts” in the famous "12 Days of Christmas" song."
+        response: "Aside from his regular appearance in fruit cocktails, Pierre plays a title role in the famous pear & gorgonzola salad, among other tasty dishes. He also brags about the pear tree being the first and, in his words, the \"best of the gifts\" in the famous '12 Days of Christmas' song."
         correct: false
 
-  - question: co-founder of the journal "Biometrika"
+  - question: co-founder of the journal 'Biometrika'
     choices:
       - image: karl-pearson.svg
         alt: "Karl Pearson"
@@ -36,14 +36,14 @@ questions:
         correct: true
       - image: danjou-pear.svg
         alt: "Pierre the D'Anjou Pear"
-        response: "While he never was appointed to an editorial position, Pierre was a regular contributor to the magazine "The Core,” which aims to educate the pear community about the management and treatment of seed irritation."
+        response: "While he never was appointed to an editorial position, Pierre was a regular contributor to the magazine 'The Core,' which aims to educate the pear community about the management and treatment of seed irritation."
         correct: false
 
   - question: Inspired the 'Juicy Pear' flavor of Jelly Belly gourmet beans
     choices:
       - image: danjou-pear.svg
         alt: "Pierre the D'Anjou Pear"
-        response: "Furthermore, Pierre's poetry and creative writing (written under the pen name "Maya d'Anjou-loo") was the inspiration for the book "All God's Children Need Traveling Shoes.""
+        response: "Furthermore, Pierre's poetry and creative writing (written under the pen name 'Maya d'Anjou-loo') was the inspiration for the book 'All God's Children Need Traveling Shoes.'"
         correct: true
       - image: karl-pearson.svg
         alt: "Karl Pearson"
@@ -58,7 +58,7 @@ questions:
         correct: true
       - image: danjou-pear.svg
         alt: "Pierre the D'Anjou Pear"
-        response: "Honest mistake—the "Pearson" in the famous Neyman-Pearson lemma in mathematical statistics is often confused with "Pear's son." Unfortunately, Pierre was never able to have a son, as it turns out he was born from a family of experimental seedless pears."
+        response: "Honest mistake—the 'Pearson' in the famous Neyman-Pearson lemma in mathematical statistics is often confused with 'Pear's son'. Unfortunately, Pierre was never able to have a son, as it turns out he was born from a family of experimental seedless pears."
         correct: false
 
   - question: Developed a number of still-widely-used statistical methods, including the chi-square test and method of moments
@@ -80,7 +80,7 @@ questions:
         correct: true
       - image: karl-pearson.svg
         alt: "Karl Pearson"
-        response: "Pearson's views on skin color, as it pertained to eugenics, would be considered deeply racist today, advocating war on "inferior races.""
+        response: "Pearson's views on skin color, as it pertained to eugenics, would be considered deeply racist today, advocating war on \"inferior races.\""
         correct: false
 
   - question: Was offered knighthood but refused
