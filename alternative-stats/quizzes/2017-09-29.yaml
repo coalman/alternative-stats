@@ -87,7 +87,7 @@ questions:
     choices:
       - image: gertrude-cox.svg
         alt: "Gertrude Cox"
-        response: "Cox's maximal bite force barely reached 1,000 netwons."
+        response: "Cox's maximal bite force barely reached 1,000 newtons."
         correct: false
       - image: great-white-shark.svg
         alt: "Great white shark"
