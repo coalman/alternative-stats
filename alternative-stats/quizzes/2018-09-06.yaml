@@ -42,13 +42,13 @@ questions:
   - question: Inspired the 'Juicy Pear' flavor of Jelly Belly gourmet beans
     choices:
       - image: karl-pearson.svg
-      alt: "Karl Pearson"
-      response: "Pearson's flavor was the inspiration for the immensely popular 'Human Flesh' flavor of Jelly Bellies."
-      correct: false
+        alt: "Karl Pearson"
+        response: "Furthermore, Pierre's poetry and creative writing (written under the pen name 'Maya d'Anjou-loo') was the inspiration for the book 'All God's Children Need Traveling Shoes.'"
+        correct: false
       - image: danjou-pear.svg
-      alt: "Pierre the D'Anjou Pear"
-      response: "Furthermore, Pierre's poetry and creative writing (written under the pen name 'Maya d'Anjou-loo') was the inspiration for the book 'All God's Children Need Traveling Shoes.'"
-      correct: true
+        alt: "Pierre the D'Anjou Pear"
+        response: "Pearson's flavor was the inspiration for the immensely popular 'Human Flesh' flavor of Jelly Bellies."
+        correct: true
 
   - question: Their son was a well-known statistician
     choices:
@@ -75,13 +75,13 @@ questions:
   - question: Their skin color cannot be used as an indicator of ripeness
     choices:
       - image: karl-pearson.svg
-      alt: "Karl Pearson"
-      response: "Pearson's views on skin color, as it pertained to eugenics, would be considered deeply racist today, advocating war on \"inferior races.\""
-      correct: false
+        alt: "Karl Pearson"
+        response: "Pearson's views on skin color, as it pertained to eugenics, would be considered deeply racist today, advocating war on \"inferior races.\""
+        correct: false
       - image: danjou-pear.svg
-      alt: "Pierre the D'Anjou Pear"
-      response: "Unlike Pierre's sworn enemy, the Bartlett pear (whose skin changes from green to yellow upon ripening), he retains his hearty green (or sometimes red) coloration. Pierre is ripe when the flesh around his neck is soft."
-      correct: true
+        alt: "Pierre the D'Anjou Pear"
+        response: "Unlike Pierre's sworn enemy, the Bartlett pear (whose skin changes from green to yellow upon ripening), he retains his hearty green (or sometimes red) coloration. Pierre is ripe when the flesh around his neck is soft."
+        correct: true
 
   - question: Was offered knighthood but refused
     choices:
