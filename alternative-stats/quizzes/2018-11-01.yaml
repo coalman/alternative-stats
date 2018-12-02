@@ -1,0 +1,95 @@
+name: Florence Nightingale or Common Nightingale
+publishdate: 2018-11-01
+icons:
+  - src: florence-nightingale.svg
+    alt: "Florence Nightingale"
+  - src: common-nightingale.svg
+    alt: "Common Nightingale"
+questions:
+  - question: Known as the founder of modern nursing
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "With the establishment of her nursing school at St. Thomas' Hospital in London, Florence Nightingale laid the foundation for professional nursing. In addition, she implemented handwashing practices in war hospitals and kept the number of deaths as data."
+        correct: true
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "The common nightingale permanently abandoned nursing after it realized it was too small for the uniform.
+        correct: false
+
+  - question: Developed the polar area diagram
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "Florence Nightingale was a pioneer in infographics. She created the polar area diagram (a variation of the pie chart equivalent to a modern circular histogram) to illustrate seasonal sources of patient mortality in the military field hospital she managed."
+        correct: true
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "Contrary to popular belief, the common nightingale is one of the Founding Fathers of Satanism."
+        correct: false
+
+  - question: Became an icon of Victorian culture as "The Lady with the Lamp"
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "This nickname for Florence Nightingale was derived during the Crimean War from a report in 'The Times' regarding her habit of making rounds to wounded soldiers at night."
+        correct: true
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "While no lady with an appliance, the common nightingale’s nicknames include ‘sing-song-chicken’ and ‘chirp-chirp-death’."
+        correct: false
+
+  - question: Elected as the first female member of the Royal Statistical Society in 1859
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "In addition, Florence Nightingale became an honorary member of the American Statistical Association in 1874."
+        correct: true
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "The common nightingale does not believe in gender binaries."
+        correct: false
+
+  - question: Made a comprehensive statistical study of sanitation in Indian rural life
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "Florence Nightingale was a prominent figure in the introduction of improved medical care and public health service in India, contributing 40 years of work to her cause."
+        correct: true
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "The common nightingale published a study on bugs, bugs, more bugs...and singing."
+        correct: false
+
+  - question: Survives primarily by preying on invertebrates
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "While Florence Nightingale did offer nutritional advice based on comfort, rather than science, her dental records indicate she was not comfortable surviving off of invertebrates."
+        correct: false
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "The Common Nightingale enjoys a lively diet of beetles, ants, caterpillars, flies, spiders, earthworms, and the occasional seeds or berries during the Autumn season."
+        correct: true
+
+  - question: Referenced in literature to symbolize melancholy/joy, love/loss, and life/death
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "Florence Nightingale is not referenced for her love, but we love her all the same."
+        correct: false
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "Most impressively, the Common Nightingale (or its songs) makes an appearance in The Homer's 'Odyssey,' T.S. Eliot's 'The Wasteland,' and even in Shakespeare's 'Romeo and Juliet'."
+        correct: true
+
+  - question: Best known for their powerful and beautiful songs, made up of a wide range of whistles, trills, and gurgles
+    choices:
+      - image: florence-nightingale.svg
+        alt: "Florence Nightingale"
+        response: "While Florence Nightingale was not known for her songs, there is audio of her voice dating all the way back to 1890. Whether her voice is beautiful or not is left as an exercise for the reader."
+        correct: false
+      - image: common-nightingale.svg
+        alt: "Common Nightingale"
+        response: "The Common Nightingale frequently sings at night (in addition to the daytime). The most distinct feature of their song is a loud whistling crescendo."
+        correct: true
