@@ -14,7 +14,7 @@ questions:
         correct: true
       - image: common-nightingale.svg
         alt: "Common Nightingale"
-        response: "The common nightingale permanently abandoned nursing after it realized it was too small for the uniform.
+        response: "The common nightingale permanently abandoned nursing after it realized it was too small for the uniform."
         correct: false
 
   - question: Developed the polar area diagram
